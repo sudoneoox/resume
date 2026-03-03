@@ -28,14 +28,14 @@
 #resume_heading[Education]
 #edu_item(
   name: "University of Houston",
-  degree: "Bachelor of Science in Computer Science",
+  degree: "B.Sc Computer Science",
   location: "Houston, TX",
   date: "Aug. 2023 - May 2026",
   focus: "Data Science",
 )
 #edu_item(
   name: none,
-  degree: "Bachelor of Science in Mathematics",
+  degree: "B.Sc Mathematics",
   location: none,
   date: none,
   focus: "Data Science",
@@ -89,7 +89,6 @@
 )
 
 // =========================================+ CERTIFICATES +=========================================================
-
 // #resume_heading("Certifications")
 // #cert_item(
 //   name: "Data Engineer",
@@ -111,7 +110,7 @@
 )
 #skill_item(
   category: "Data Engineering",
-  skills: "SQL, Pieplines, ETL/ELT, Data Modeling",
+  skills: "SQL, Pipelines, ETL/ELT, Data Modeling",
 )
 #skill_item(category: "Tools", skills: "Git, Linux, Shell"
 )
@@ -132,7 +131,6 @@
 
 
 // =========================================+ HONORS / AWARDS +=========================================================
-// // Optional: include for grad school (move above Experience) or data eng (keep here/omit)
 // #resume_heading("Honors & Awards")
 // #honor_item(
 //   name: "Phi Beta Kappa",
@@ -141,6 +139,5 @@
 //   note: "Top academic honor society, awarded to top 10% of arts & sciences graduates"
 // )
 
-// Optional section — remove entire block if unused
 
 
