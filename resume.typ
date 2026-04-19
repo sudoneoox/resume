@@ -1,3 +1,4 @@
+
 #import "template.typ": resume, header, header2, resume_heading, edu_item, exp_item, project_item, skill_item, cert_item, honor_item
 
 #show: resume
@@ -28,14 +29,14 @@
 #resume_heading[Education]
 #edu_item(
   name: "University of Houston",
-  degree: "B.Sc Computer Science",
+  degree: "Bachelor of Science in Computer Science",
   location: "Houston, TX",
   date: "Aug. 2023 - May 2026",
   focus: "Data Science",
 )
 #edu_item(
   name: none,
-  degree: "B.Sc Mathematics",
+  degree: "Bachelor of Science in Mathematics",
   location: none,
   date: none,
   focus: "Data Science",
@@ -69,26 +70,19 @@
 // =========================================+ PROJECTS +=============================================================
 #resume_heading("Projects")
 #project_item(
-  name: "University Approval System",
-  skills: "Django, SQL, React, Vite",
+  name: "Job Market Intelligence Platform",
+  skills: "Python, dbt, SQL, Databricks, GCS, Terraform, Prefect, Streamlit, Plotly",
   date: "",
-  [Developed a web-based academic form submission and approval system using Django backend and React frontend],
-  [Designed and built a hierarchical approval workflow system allowing for complex multi-step processes],
-  [Created electronic signature functionality for PDF document generation and validation],
-  [Built administrative interfaces for managing users, organizational units, and approval delegation],
-  [Integrated with another team's system to expand service coverage across multiple organizational units]
-)
-#project_item(
-  name: "Medical Clinic Management System",
-  skills: "SQL, Node.js, React",
-  date: "",
-  [Designed and implemented a detailed database schema for efficient management of medical clinic operations],
-  [Developed a backend API using Node.js, Express, and Sequelize ORM, establishing complex relationships between entities],
-  [Implemented user authentication and role-based access control for secure data management across different user roles],
-  [Created API endpoints for core functionalities including user registration, appointment scheduling, and medical record management]
+  [Engineered an end-to-end data pipeline ingesting 1.48M+ job postings from 6 sources (BLS, FRED, Adzuna, ACS Census APIs, O*NET, and Kaggle) into a medallion architecture with 61 dbt models across bronze, silver, and gold layers],
+  [Built Python ingestion clients with idempotent marker-file downloads, salary normalization correcting mislabeled pay periods by magnitude analysis, and SOC code classification via 70K+ O*NET alternate title matching],
+  [Provisioned cloud infrastructure with Terraform (GCS bucket, service account, IAM) and orchestrated daily pipelines with Prefect supporting selective execution modes and 1Password CLI secret injection],
+  [Developed a skills quality pipeline normalizing 100+ variant names and filtering 80+ patterns of non-skill data leaking from source datasets, reducing noise by over 90% in downstream analytics],
+  [Created a 4-page Streamlit dashboard with Plotly visualizations surfacing salary-to-income ratios across 15 metros, per-occupation skill demand rankings, and O*NET vs. market skills gap analysis identifying emerging tools not yet formally cataloged],
 )
 
+
 // =========================================+ CERTIFICATES +=========================================================
+
 // #resume_heading("Certifications")
 // #cert_item(
 //   name: "Data Engineer",
@@ -110,7 +104,7 @@
 )
 #skill_item(
   category: "Data Engineering",
-  skills: "SQL, Pipelines, ETL/ELT, Data Modeling",
+  skills: "SQL, Pieplines, ETL/ELT, Data Modeling",
 )
 #skill_item(category: "Tools", skills: "Git, Linux, Shell"
 )
@@ -131,6 +125,7 @@
 
 
 // =========================================+ HONORS / AWARDS +=========================================================
+// // Optional: include for grad school (move above Experience) or data eng (keep here/omit)
 // #resume_heading("Honors & Awards")
 // #honor_item(
 //   name: "Phi Beta Kappa",
@@ -139,5 +134,6 @@
 //   note: "Top academic honor society, awarded to top 10% of arts & sciences graduates"
 // )
 
+// Optional section — remove entire block if unused
 
 
